@@ -1,0 +1,22 @@
+httpcomponent html
+
+---------------------
+<div>
+    <h1 appCustom> End to end Activity</h1>
+    <hr/>
+    <button class="btn btn-success" (click)="getBookData()"> GET BOOK DATA</button>
+    <table>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>ISBN</th>
+        </tr>
+     
+        <tr *ngFor="let data of bookdata" >
+          <td >{{ data._id }}</td>
+          <td>{{ data.title }}</td>
+          <td>{{ data.isbn }}</td>
+        </tr>
+    
+      </table>
+</div>

@@ -1,0 +1,16 @@
+<div>
+    <h1> Template Driven Forms (TDF) </h1>
+    <form #Loginform="ngForm" (ngSubmit)="login(Loginform.value)" >
+        <label> Enter username : </label> <input type="text" name="username" #uname="ngModel"  required ngModel/> <br/>
+        <div [hidden]="uname.valid || uname.pristine" style="color:red">Username cannot be left blank</div>
+        <label> Enter password : </label> <input type="password" #pwd="ngModel" name="password" ngModel /> <br/>
+        <div [hidden]="pwd.valid || pwd.pristine" style="color:red">Password cannot be left blank</div>
+        <div ngModelGroup="Security">
+            <label> Enter captcha: </label>
+            <input type="text" name="captcha" ngModel/>
+            <label> Enter OTP:</label>
+            <input type="text" name="otp" ngModel/>
+        </div>
+        <input type="submit"/>
+    </form>
+</div>

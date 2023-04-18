@@ -1,0 +1,24 @@
+httpcomponent html
+
+---------------------
+<div>
+    <br><br>
+    <h1 appCustom>Todo using service</h1>
+    <hr/>
+    <button class="btn btn-success" (click)="getData()"> GET TODO DATA</button>
+
+    <table>
+        <tr>
+          <th >ID</th>
+          <th>User ID</th>
+          <th>Title</th>
+        </tr>
+     
+        <tr *ngFor="let data of tododata" >
+          <td>{{ data.id }}</td>
+          <td>{{ data.userId }}</td>
+          <td>{{ data.title }}</td>
+        </tr>
+    
+      </table>
+</div>

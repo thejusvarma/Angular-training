@@ -1,0 +1,40 @@
+httpcomponent html
+
+---------------------
+<div>
+    <h1 appCustom> End to end Activity</h1>
+    <hr/>
+    <button class="btn btn-success" (click)="getBlossomData()"> GET BOOK DATA</button>
+    <table>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>ISBN</th>
+        </tr>
+    
+        <tr *ngFor="let data of blossomdata" >
+          <td *ngIf="data.name == name">{{ data.id }}</td>
+          <td *ngIf="data.name == name">{{ data.name }}</td>
+        </tr>
+      </table>
+
+    <table>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>ISBN</th>
+        </tr>
+     
+        <tr *ngFor="let data of blossomdata" >
+          <td *ngIf="data.name == name">{{ data.id }}</td>
+          <td *ngIf="data.name == name">{{ data.name }}</td>
+        </tr>
+    
+      </table>
+
+      <div>
+       
+        <input type="text" placeholder="username" [(ngModel)]="name" />
+        The user logged in is {{ name }}
+      </div>
+</div>

@@ -1,0 +1,33 @@
+<div>
+    
+    <h3>Data binding in Angular</h3>
+    <hr />
+    <div>
+      <h6 style="color: fuchsia">Interpolation Binding</h6>
+      <h4>Stream name is : {{ streamname }}</h4>
+    </div>
+
+    <hr />
+    <div [align]="myalign">
+      <h6 style="color: fuchsia">Property Binding</h6>
+      <h4>The property value is : Right Align</h4>
+    </div>
+
+    <div style="text-align: center; color: fuchsia">
+      <h2>Plain HTML</h2>
+    </div>
+    <hr />
+
+    <div style="color: fuchsia">
+      <h4>Event Binding</h4>
+      <h4>Button click event</h4>
+      <button (click)="Clickme()">Click Me</button>
+    </div>
+
+    <div>
+      <h4 style="color: fuchsia">Two way binding</h4>
+      Enter username:
+      <input type="text" placeholder="username" [(ngModel)]="username" />
+      The user logged in is {{ username }}
+    </div>
+  </div>

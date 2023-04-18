@@ -1,0 +1,15 @@
+<div>
+    <h1> Model Driven Forms</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <label> Enter username :</label> <input type="text" formControlName="uname" /><br/>
+        <div *ngIf="loginForm.controls['uname'].hasError('required')" style="color:Red">
+            Username cannot be left blank...
+        </div>
+        <label> Enter password :</label> <input type="password" formControlName="pwd" /><br/>
+        <div formGroupName="Security">
+            <label> Enter Captcha :</label> <input type="text" formControlName="captcha" /><br/>
+            <label> Enter OTP :</label> <input type="text" formControlName="otp" /><br/>
+        </div>
+        <input type="submit"/>
+    </form>
+</div>

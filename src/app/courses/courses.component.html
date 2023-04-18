@@ -1,0 +1,22 @@
+<div>
+    <h1 appCustom> Courses Component</h1>
+    <h3> The Courses data are</h3>
+    <table class="table table-dark">
+        <thead>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>DURATION</th>
+            <th>SME</th>
+        </thead>
+        <tbody>
+            <tr *ngFor ="let course of courses">
+                <td><a [routerLink]="['/courses',course.cid]">{{course.cid}}</a></td>                <td>{{course.cname}}</td>
+                <td>{{course.cduration}}</td>
+                <td>{{course.csme}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-info" >Click</button>
+</div>
+
+<router-outlet></router-outlet>

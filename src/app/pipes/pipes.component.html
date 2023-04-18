@@ -1,0 +1,24 @@
+<div>
+    <h1 appCustom >PIPES COMPONENT</h1>
+    <hr/>
+    <div>
+        <h3>LOWERCASE PIPE</h3>
+        {{ name | lowercase | custom : 'm'}}
+    </div>
+    <div>
+        <h3>TITLECASE PIPE</h3>
+        {{ name | titlecase}}
+    </div>
+    <div>
+        <h3>SLICECASE PIPE</h3>
+        {{ name | slice :0 :3}}
+    </div>
+    <div>
+        <h3>DATECASE PIPE</h3>
+        {{ dob | date : 'medium' }}
+    </div>
+    <div>
+        <h3>CURRENCY PIPE</h3>
+        {{ money | currency: 'EUR'}}
+    </div>
+</div>

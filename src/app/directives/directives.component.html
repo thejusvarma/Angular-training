@@ -1,0 +1,26 @@
+<table>
+    <tr>
+      <th *ngIf="flag">ID</th>
+      <th>Name</th>
+      <th>roll</th>
+    </tr>
+ 
+    <tr *ngFor="let data of sampledata" >
+      <td *ngIf="flag" >{{ data.id }}</td>
+      <td>{{ data.name }}</td>
+      <td>{{ data.roll }}</td>
+    </tr>
+
+  </table>
+
+<button (click)="toggle()"> Click</button>
+
+<!-- ngswitch -->
+    <select [(ngModel)]="selectedValue">  
+        <option *ngFor="let item of items;" [value]="item.name">{{item.name}}</option>  
+    </select>  
+    <div class='row' [ngSwitch]="selectedValue">  
+        <div *ngSwitchCase="'One'">One</div>  
+        <div *ngSwitchCase="'Two'">Two</div>  
+        <div *ngSwitchDefault>Default option</div>  
+    </div>  

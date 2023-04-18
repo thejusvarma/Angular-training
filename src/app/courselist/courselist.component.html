@@ -1,0 +1,16 @@
+<p>courselist works!</p>
+<div>
+    <h1 appCustom> Courselist Component</h1>
+    <h3> The Courses data are</h3>
+    <table class="table">
+        <thead>
+            <th scope="col">NAME</th>
+        </thead>
+        <tbody>
+            <tr scope="col" *ngFor ="let course of courses">
+                <td>{{course.cname}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
