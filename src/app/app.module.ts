@@ -22,6 +22,9 @@ import { TdfComponent } from './tdf/tdf.component';
 import { MdfComponent } from './mdf/mdf.component';
 import { BookComponent } from './book/book.component';
 import { BlossomComponent } from './blossom/blossom.component';
+import { RxjsLearningComponent } from './rxjs-learning/rxjs-learning.component';
+import { TestParentComponent } from './test-parent/test-parent.component';
+import { TestChildComponent } from './test-child/test-child.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +45,9 @@ import { BlossomComponent } from './blossom/blossom.component';
     MdfComponent,
     BookComponent,
     BlossomComponent,
+    RxjsLearningComponent,
+    TestParentComponent,
+    TestChildComponent,
   ],
   imports: [
     BrowserModule,
