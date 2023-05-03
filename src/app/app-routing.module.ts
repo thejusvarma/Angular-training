@@ -13,6 +13,7 @@ import { BookComponent } from './book/book.component';
 import { BlossomComponent } from './blossom/blossom.component';
 import { RxjsLearningComponent } from './rxjs-learning/rxjs-learning.component';
 import { TestParentComponent } from './test-parent/test-parent.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 
 const routes: Routes = [
   {path:'courses', component:CoursesComponent,children:[
@@ -29,7 +30,9 @@ const routes: Routes = [
   {path:'book', component:BookComponent},
   {path:'blossom', component:BlossomComponent},
   {path:'rxjs-learning', component:RxjsLearningComponent},
-  {path:'test-parent', component:TestParentComponent}
+  {path:'test-parent', component:TestParentComponent},
+  {path:'reactive-forms', component:ReactiveFormsComponent}
+
 ];
 
 @NgModule({

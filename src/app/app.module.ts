@@ -25,6 +25,7 @@ import { BlossomComponent } from './blossom/blossom.component';
 import { RxjsLearningComponent } from './rxjs-learning/rxjs-learning.component';
 import { TestParentComponent } from './test-parent/test-parent.component';
 import { TestChildComponent } from './test-child/test-child.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,6 +49,7 @@ import { TestChildComponent } from './test-child/test-child.component';
     RxjsLearningComponent,
     TestParentComponent,
     TestChildComponent,
+    ReactiveFormsComponent,
   ],
   imports: [
     BrowserModule,
