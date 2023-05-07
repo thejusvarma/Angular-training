@@ -14,6 +14,7 @@ import { BlossomComponent } from './blossom/blossom.component';
 import { RxjsLearningComponent } from './rxjs-learning/rxjs-learning.component';
 import { TestParentComponent } from './test-parent/test-parent.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { FormArrayComponent } from './form-array/form-array.component';
 
 const routes: Routes = [
   {path:'courses', component:CoursesComponent,children:[
@@ -31,8 +32,8 @@ const routes: Routes = [
   {path:'blossom', component:BlossomComponent},
   {path:'rxjs-learning', component:RxjsLearningComponent},
   {path:'test-parent', component:TestParentComponent},
-  {path:'reactive-forms', component:ReactiveFormsComponent}
-
+  {path:'reactive-forms', component:ReactiveFormsComponent},
+  {path:'form-array', component:FormArrayComponent}
 ];
 
 @NgModule({

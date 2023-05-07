@@ -26,6 +26,7 @@ import { RxjsLearningComponent } from './rxjs-learning/rxjs-learning.component';
 import { TestParentComponent } from './test-parent/test-parent.component';
 import { TestChildComponent } from './test-child/test-child.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { FormArrayComponent } from './form-array/form-array.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +51,7 @@ import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.componen
     TestParentComponent,
     TestChildComponent,
     ReactiveFormsComponent,
+    FormArrayComponent,
   ],
   imports: [
     BrowserModule,

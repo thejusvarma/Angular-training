@@ -1,0 +1,18 @@
+<p>form-array works!</p>
+<form [formGroup]="Details" (ngSubmit)="details()" >
+    <input type="text" placeholder="name" formControlName="name">
+    <br>
+    <p *ngIf="name && name.invalid && name.touched">This field in Invalid </p>
+    <br>
+    <br>
+    <input type="text" placeholder="Age" formControlName="age">
+    <p *ngIf="age && age.invalid && age.touched ">This field in Invalid </p>
+
+    <div formArrayName="skills" >
+        <ng-container *ngFor="let skill of Details.controls.skills['controls'];index as i">
+            <input type="text"  placeholder="skills" formControlName="{{i}}">
+        </ng-container>
+    </div>
+    <button (click)="addskill()" >Add Skill</button>
+    <button type="submit" [disabled]="Details.invalid" >Submit</button>
+</form>

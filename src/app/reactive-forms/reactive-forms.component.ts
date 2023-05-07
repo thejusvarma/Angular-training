@@ -9,7 +9,7 @@ export class ReactiveFormsComponent {
 
   LoginForm = new FormGroup({
     user : new FormControl('',[Validators.required]),
-    password : new FormControl('',[Validators.required])
+    password : new FormControl('',[Validators.required]),
   });
 
   login()
